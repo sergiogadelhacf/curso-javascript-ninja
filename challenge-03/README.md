@@ -200,7 +200,7 @@ pessoa.apresentacao = function(){
       stringMetros = ' metros!';
      }
   
-  return 'Olá, eu sou ' + stringSexo + pessoa.nomeCompleto + ', tenho ' + pessoa.idade + ' ' + stringIdade + pessoa.altura + ', meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + stringMetros;
+  return 'Olá, eu sou ' + stringSexo + pessoa.nome + ' ' + pessoa.sobrenome + ', tenho ' + pessoa.idade + ' ' + stringIdade + pessoa.altura + ', meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + stringMetros;
   
   }
 
