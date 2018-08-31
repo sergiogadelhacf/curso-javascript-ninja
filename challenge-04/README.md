@@ -8,12 +8,8 @@ equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
 var isTruthy = function (arg){
-    if(arg){
-      return true;
-    } else {
-      return false;
-      }
-}
+    return !!arg;
+};
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
 isTruthy(-0);
@@ -23,6 +19,7 @@ isTruthy(undefined);
 isTruthy('');
 isTruthy("");
 isTruthy(false);
+isTruthy(NaN);
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
@@ -56,10 +53,10 @@ var carro = {
     placa: 'ouj7859',
     ano: 2015,
     cor: 'cinza',
-    quantasPortas: 0,
+    quantasPortas: 2,
     assentos: 5,
     quantidadePessoas: 0
-}
+};
 
 /*
 Crie um método chamado `mudarCor` que mude a cor do carro conforme a cor
